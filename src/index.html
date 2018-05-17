@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telphone=no, email=no,address=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+</head>
+
+<body>
+    <script type="text/x-handlebars-template" id="tpl">
+        <div class="wrap">
+            <header>
+                <div class="top">
+                    <span class="iconfont icon-share6"></span>
+                    <label for="">
+                    <i class="iconfont icon-fangdajing"></i>
+                    <input type="text" placeholder="搜索商品名称">
+                 </label>
+                    <span class="iconfont icon-eyeopen"></span>
+                </div>
+                <nav>
+                    <ul>
+                        {{#each arr}}
+                        <li><a>{{this}}</a></li>
+                        {{/each}}
+
+                    </ul>
+                </nav>
+            </header>
+            <section><img src="img/mi_r2_c2.png" alt=""></section>
+            <footer></footer>
+        </div>
+    </script>
+</body>
+
+<script src="js/require.js" data-main="./js/main"></script>
+
+</html>
